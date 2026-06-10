@@ -98,4 +98,4 @@ When the predicate matches:
 The handler has no UI behavior declaration — the halt is silent (console log only). Implementers may add UI feedback (error message, blocked submit) per the spec.
 
 
-```
+
