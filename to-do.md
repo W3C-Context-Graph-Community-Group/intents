@@ -5,6 +5,8 @@
 - Documentation
 - examples / reference implementations
 
+Note: Ron calls this an "intent-map"
+
 ```json
 {
   "program-intent": {
