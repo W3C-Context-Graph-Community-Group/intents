@@ -63,6 +63,10 @@ Description: In a particular moment, and instance, we have this group of intents
 
   Description: The global collection of intents across all systems available to the Global System
 
+## Triggers
+
+A trigger states a predicate (condition) for which to trigger an event (command chain).
+
 ```md
 <!-- triggers/pii-email.md -->
 
