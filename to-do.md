@@ -67,7 +67,7 @@ Description: In a particular moment, and instance, we have this group of intents
 
 A trigger states a predicate (condition) for which to trigger an event (command chain).
 
-```md
+
 <!-- triggers/pii-email.md -->
 
 # pii-email
