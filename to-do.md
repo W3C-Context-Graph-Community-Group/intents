@@ -70,24 +70,24 @@ A trigger states a predicate (condition) for which to trigger an event (command 
 
 <!-- triggers/pii-email.md -->
 
-# pii-email
+### pii-email
 
 **Reference URL:** `cgp:/r/triggers/pii-email.md`
 
 Halt-gate trigger that fires when the textarea value contains an email address pattern. Declared under `program-intent/halt` in the textarea intent map.
 
-## Predicates
+#### Predicates
 
 ```json
 [{ "type": "regex", "value": "\\S+@\\S+\\.\\S+" }]
 ```
 
-## Predicate evaluation
+#### Predicate evaluation
 
 - **Textarea handler:** the regex evaluates against `target.value` (the full textarea content) on each act-gate event (keyup). If the halt fires, the spike still mints (Coupling Rule) but act processing is skipped.
 - **Drop handler (runtime):** if a drop-side intent map declared this predicate type, the regex would evaluate against the joined header string (`headers.join(',')`), not per-cell. Alpha's drop intent map has an empty halt array, so this path does not fire.
 
-## Effect
+#### Effect
 
 When the predicate matches:
 
