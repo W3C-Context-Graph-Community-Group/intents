@@ -5,7 +5,21 @@
 - Documentation
 - examples / reference implementations
 
-Note: Ron calls this an "intent-map"
+## Definitions:
+*(Ron's language)*
+ - *intent*:
+
+```json
+{
+        "trigger-url": "cgp:/r/triggers/pii-email.md",
+        "predicates": [
+          { "type": "regex", "value": "\\S+@\\S+\\.\\S+" }
+        ],
+        "handler": {}
+}
+```
+- *intent-map*:
+Description: In a particular moment, and instance, we have this group of intents applied to this html object
 
 ```json
 {
@@ -45,7 +59,9 @@ Note: Ron calls this an "intent-map"
 }
 
 ```
+- *intent-registry*:
 
+  Description: The global collection of intents across all systems available to the Global System
 
 ```md
 <!-- triggers/pii-email.md -->
